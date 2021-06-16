@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import BMIHesapla from "../src/components/Hesapla/BMIHesapla";
+import Info from "../src/components/BMINedir/Info";
+import bg from  '../src/healthy1.jpg'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      <div  style={{ backgroundImage:`url(${bg})`,backgroundPosition:'center',height:"100vh",backgroundRepeat:'no-repeat'}}>
+
+      <div style={{position:"relative"}}>
+        <BMIHesapla />
+
+        <Info  />
+      </div>
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,15 @@
+.hoverCard{
+    opacity:0.5;
+    width: 18rem;   
+}
+
+.hoverCard:hover{
+    opacity: 1;
+    transition: 0.8;
+
+}
+
+#bmi {
+    margin-left: 160rem;
+    position: absolute;
+}
